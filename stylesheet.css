@@ -196,7 +196,7 @@ You can change the pixel number below */
     padding: 10px 10px 10px 10px;
 	margin-bottom: 10px;
 	align-content: center;
-	width: 50%;
+	width: 100%;
 	}
 	
 } /* closes 768px+ */
@@ -240,7 +240,7 @@ You can change the pixel number below */
     padding: 10px 10px 10px 10px;
 	margin-bottom: 10px;
 	align-content: center;
-	width: 20%;
+	width: 100%;
 	}
 	
 } /* closes 768px+ */
