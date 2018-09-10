@@ -1,14 +1,76 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-<title>Page Title</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<title>Alternate Bit</title>
+	
+	<link rel="stylesheet" href="stylesheet.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div id="container">
 
-<p>Another Paragraph!</p>
-<p>Test</p>
+<header><h1><img src="rectangle-logo.jpg" alt=""/></h1>
+</header>
+
+<nav>
+<a href="#" class="menu">&#9776;</a>
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">Games</a></li>
+		<li><a href="https://alternatebitgames.com/privacy_policy.html">Privacy Policy</a></li>
+		<li><a href="">Contact</a></li>
+	</ul>
+</nav>
+
+<main> 
+<div><a href="https://twitter.com/AlternateBit" class="fa fa-twitter"></a></div>
+
+</main>
+ 
+</div><!-- close "container" -->
+  
+<footer><p>&#169; Alternate Bit 2018</p></footer>  
+  
+<!-- Link to jQuery: Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Write your jQuery here -->
+<script>
+$(document).ready(function() {
+
+	$('ul ul').hide();
+	$('nav ul').hide();
+
+	$('li:nth-child(3)').click(function() {
+		$('ul ul').slideToggle();
+	});//close .click
+	
+	$('div#container>header h1').click(function() {
+		$('body').toggleClass('darby');
+	});//close .click
+	
+	//Hamburger menu
+    $('a.menu').click(function() {
+		$('nav>ul').slideToggle();
+    });	
+	
+	
+}); //closes .ready
+</script> 
+
 </body>
-</html>
+
+</html> 

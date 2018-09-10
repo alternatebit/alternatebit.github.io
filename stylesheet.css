@@ -1,0 +1,218 @@
+/* Basic CSS resets -- levelling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+
+/* Legacy: this will enforce block-level properties to HTML5 elements */
+figcaption, footer, header, nav, main, aside, section, canvas, iframe {
+	display: block;
+}
+
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+header {
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	text-align: center;	
+	line-height: 90px;
+}
+
+h1 {
+	color:black;
+}
+
+h2 {
+	text-align: center;
+}
+
+body {
+	/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;	
+	font-family: 'Roboto', sans-serif;
+}
+
+main {
+	color:gray;
+	align-content: center;
+	text-align: center;
+}
+
+
+#container {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+
+img {
+    padding: 10px 10px 10px 10px;
+	margin-bottom: 10px;
+}
+
+figure {
+	text-align: center;
+	align-content: center;
+	width: 100%;
+}
+
+figcaption {
+	color:black;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0px;
+}
+
+a {
+    display: block; /* or display: inline-block; */
+    width: auto;  /* makes buttons wide if block-level; maybe also % width */
+    text-align: center;
+    padding: 6px;  /* lots of padding */
+    margin: 5px;  /* increase top and bottom margins */
+    text-decoration: none;
+    border-radius: 3px;  /* a slight-buttonish shape doesn't hurt */
+	background:lightgray;
+	color: #3f3f41;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+a:hover {
+	background:gray;
+	color:white;
+	
+}
+a.menu {
+	width: 20px;
+	margin-top: 10px;
+}
+
+a.menu:hover {
+	background: #3f3f41;
+	color:lightgray;
+}
+
+nav a:hover{
+	background: #3f3f41;
+	color:lightgray;
+}
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+iframe {
+	width:100%;
+}
+
+footer {
+	font-family: 'Roboto', sans-serif;
+	color: #3f3f41;
+	background:lightgray;
+	width:100%;
+}
+
+footer>p { 
+
+	padding: 10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+======================================== */
+
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
+
+
+	#container {
+		max-width:750;	
+		margin-left: 80px;
+		margin-right: 80px;
+		margin-top: 10px;
+	}
+	
+	.general-img {
+		width: 500px;
+		padding: 0px;
+	}
+	
+	.research-img {
+		width: 500px;
+	}
+	
+	
+	nav{
+		width:200px;
+		float:left;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+	
+	main,nav{
+		float:none;
+	}
+	header {
+		font-size: 50px;
+	}
+	
+	
+} /* closes 768px+ */
+
+
+
+
+/* New CSS for desktop sizes.
+You can change the pixel number below */
+@media all and (min-width: 1024px) {
+	
+	img {
+	width: 500px;
+	}
+
+
+	
+} /* closes 1024px+ */
+
+
+
+
