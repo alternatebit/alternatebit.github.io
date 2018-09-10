@@ -188,16 +188,62 @@ You can change the pixel number below */
 		left:0px;
 	}
 	
-	main,nav{
+	main,nav {
 		float:none;
 	}
-	header {
-		font-size: 50px;
+
+	img {
+    padding: 10px 10px 10px 10px;
+	margin-bottom: 10px;
+	align-content: center;
+	width: 50%;
 	}
-	
 	
 } /* closes 768px+ */
 
+
+/* New CSS for phone sizes.
+You can change the pixel number below */
+@media all and (min-width: 300px) {
+
+
+	#container {
+		max-width:300;	
+		margin-left: 80px;
+		margin-right: 80px;
+		margin-top: 10px;
+	}
+	
+	.general-img {
+		width: 500px;
+		padding: 0px;
+	}
+	
+	.research-img {
+		width: 500px;
+	}
+	
+	
+	nav{
+		width:200px;
+		float:left;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+	
+	main,nav {
+		float:none;
+	}
+
+	img {
+    padding: 10px 10px 10px 10px;
+	margin-bottom: 10px;
+	align-content: center;
+	width: 20%;
+	}
+	
+} /* closes 768px+ */
 
 
 
@@ -205,8 +251,11 @@ You can change the pixel number below */
 You can change the pixel number below */
 @media all and (min-width: 1024px) {
 	
+	
+	
 	img {
 	width: 500px;
+
 	}
 
 
