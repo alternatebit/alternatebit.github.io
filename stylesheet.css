@@ -37,7 +37,7 @@ body {
 }
 
 main {
-	color:gray;
+	color:#3f3f41;
 	align-content: center;
 	text-align: center;
 }
@@ -53,6 +53,7 @@ main {
 img {
     padding: 10px 10px 10px 10px;
 	margin-bottom: 10px;
+	width: 100%;
 }
 
 figure {
@@ -114,6 +115,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 iframe {
 	width:100%;
@@ -240,7 +242,7 @@ You can change the pixel number below */
     padding: 10px 10px 10px 10px;
 	margin-bottom: 10px;
 	align-content: center;
-	width: 30%;
+	width: 100%;
 	}
 	
 } /* closes 768px+ */
