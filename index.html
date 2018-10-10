@@ -5,15 +5,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="description" content="">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Alternate Bit</title>
-	
+
 	<link rel="stylesheet" href="stylesheet.css">
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -22,8 +22,9 @@
 
 <div id="container">
 
-<header><h1><img src="rectangle-logo.jpg" alt=""/></h1>
+<header><h1><img class="company-logo" src="rectangle-logo.jpg" alt=""/></h1>
 </header>
+
 
 <nav>
 <a href="#" class="menu">&#9776;</a>
@@ -35,12 +36,14 @@
 	</ul>
 </nav>
 
-<main> 
 
-<img src="LoFive.jpg" alt=""/>
+<main>
+
+<a><img class="hero-img" src="LoFive.jpg" alt="" href="https://itunes.apple.com/us/app/lofive/id1413993120?mt=8"/></a>
 <h1>Introducing LoFive!</h1>
-<p>LoFive is a tile game played by placing tiles onto a grid to earn points. By stacking tiles, the amounts on the tiles are added. These amounts must stay below 5, or else it’s game over. Filling rows and columns lower the tile values and earn more points. Players can unlock new color themes by reaching high scores.</p>
-<div><img src="App-Store.png" alt="" width="20" href="https://itunes.apple.com/us/app/lofive/id1413993120?mt=8"/></div>
+<p class="description">LoFive is a tile game played by placing tiles onto a grid to earn points. By stacking tiles, the amounts on the tiles are added. These amounts must stay below 5, or else it’s game over. Filling rows and columns lower the tile values and earn more points. Players can unlock new color themes by reaching high scores.</p>
+
+<div><a href="https://itunes.apple.com/us/app/lofive/id1413993120?mt=8"><img class="app-store-logo" src="App-Store.png" alt="" width="20" /></a></div>
 
 
 <h1>Contact</h1>
@@ -48,18 +51,19 @@
 <p>alternate.bit.company@gmail.com</p>
 <h2>Follow us on Twitter</h2>
 
-<div><a href="https://twitter.com/AlternateBit" class="fa fa-twitter"></a></div>
+<div><a href="https://twitter.com/AlternateBit" class="fa fa-twitter fa-3x"></a></div>
 
 </main>
- 
+
 </div><!-- close "container" -->
-  
-<footer><p>&#169; Alternate Bit 2018</p></footer>  
-  
+
+<footer><p>&#169; Alternate Bit 2018</p></footer>
+
 <!-- Link to jQuery: Google CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Write your jQuery here -->
+
 <script>
 $(document).ready(function() {
 
@@ -69,20 +73,21 @@ $(document).ready(function() {
 	$('li:nth-child(3)').click(function() {
 		$('ul ul').slideToggle();
 	});//close .click
-	
+
 	$('div#container>header h1').click(function() {
 		$('body').toggleClass('darby');
 	});//close .click
-	
+
 	//Hamburger menu
     $('a.menu').click(function() {
 		$('nav>ul').slideToggle();
-    });	
-	
-	
+    });
+
+
 }); //closes .ready
-</script> 
+</script>
+
 
 </body>
 
-</html> 
+</html>

@@ -17,8 +17,11 @@ figcaption, footer, header, nav, main, aside, section, canvas, iframe {
 header {
 	font-family: 'Roboto', sans-serif;
 	font-size: 28px;
-	text-align: center;	
+	text-align: center;
 	line-height: 90px;
+}
+
+.hero-img {
 }
 
 h1 {
@@ -32,7 +35,7 @@ h2 {
 body {
 	/* Standard text-settings below */
 	font-size: 1em;
-    line-height: 1.4em;	
+    line-height: 1.4em;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -42,18 +45,30 @@ main {
 	text-align: center;
 }
 
+.description {
+	margin-left: 20px;
+	margin-right: 20px;
+}
 
 #container {
+	/*
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 10px;
+	*/
+}
+
+.company-logo {
+	width: 90%;
 }
 
 
 img {
+	/*
     padding: 10px 10px 10px 10px;
 	margin-bottom: 10px;
 	width: 100%;
+	*/
 }
 
 figure {
@@ -71,15 +86,16 @@ ul{
 	padding-left: 0px;
 }
 
+/*
 a {
-    display: block; /* or display: inline-block; */
-    width: auto;  /* makes buttons wide if block-level; maybe also % width */
+    display: block;  // or display: inline-block;
+    width: auto;  // makes buttons wide if block-level; maybe also % width
     text-align: center;
-    padding: 6px;  /* lots of padding */
-    margin: 5px;  /* increase top and bottom margins */
+    padding: 6px;  //  lots of padding
+    margin: 5px;  //  increase top and bottom margins
     text-decoration: none;
-    border-radius: 3px;  /* a slight-buttonish shape doesn't hurt */
-	background:lightgray;
+    border-radius: 3px;  //  a slight-buttonish shape doesn't hurt
+	background: lightgray;
 	color: #3f3f41;
 	font-family: 'Roboto', sans-serif;
 
@@ -88,11 +104,57 @@ a {
 a:hover {
 	background:gray;
 	color:white;
-	
+
 }
+
 a.menu {
 	width: 20px;
 	margin-top: 10px;
+}
+
+a.menu:hover {
+	background: #3f3f41;
+	color:lightgray;
+}
+
+nav a:hover{
+	background: #3f3f41;
+	color:lightgray;
+}
+
+*/
+
+nav>ul>li>a {
+  display: block;  /* or display: inline-block; */
+  width: auto;  /* makes buttons wide if block-level; maybe also % width*/
+  text-align: center;
+  padding: 6px;  /*  lots of padding*/
+  margin: 5px;  /*  increase top and bottom margins*/
+  text-decoration: none;
+  border-radius: 3px;  /*  a slight-buttonish shape doesn't hurt */
+	background: lightgray;
+	color: #3f3f41;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav>ul>li>a:hover {
+	background:gray;
+	color:white;
+}
+
+a.menu {
+	width: 20px;
+	margin-top: 10px;
+
+	display: block;  /* or display: inline-block; */
+	text-align: center;
+	padding: 6px;  /*  lots of padding*/
+	margin: 5px;  /*  increase top and bottom margins*/
+	text-decoration: none;
+	border-radius: 3px;  /*  a slight-buttonish shape doesn't hurt */
+	background: lightgray;
+	color: #3f3f41;
+	font-family: 'Roboto', sans-serif;
 }
 
 a.menu:hover {
@@ -128,7 +190,7 @@ footer {
 	width:100%;
 }
 
-footer>p { 
+footer>p {
 
 	padding: 10px;
 }
@@ -155,6 +217,10 @@ footer>p {
     color: white;
 }
 
+.app-store-logo {
+	width: 200px;
+}
+
 
 /* ========================================
 MEDIA QUERIES!
@@ -166,22 +232,24 @@ You can change the pixel number below */
 
 
 	#container {
-		max-width:750;	
+		/*
+		max-width:750;
 		margin-left: 80px;
 		margin-right: 80px;
 		margin-top: 10px;
+		*/
 	}
-	
+
 	.general-img {
 		width: 500px;
 		padding: 0px;
 	}
-	
+
 	.research-img {
 		width: 500px;
 	}
-	
-	
+
+
 	nav{
 		width:200px;
 		float:left;
@@ -189,18 +257,30 @@ You can change the pixel number below */
 		top:0px;
 		left:0px;
 	}
-	
+
 	main,nav {
 		float:none;
 	}
 
 	img {
+	/*
     padding: 10px 10px 10px 10px;
 	margin-bottom: 10px;
+
 	align-content: center;
 	width: 50%;
+		*/
 	}
-	
+
+	.description {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.company-logo {
+		width: 50%;
+	}
+
 } /* closes 768px+ */
 
 
@@ -210,22 +290,24 @@ You can change the pixel number below */
 
 
 	#container {
-		max-width:300;	
+		/*
+		max-width:300;
 		margin-left: 80px;
 		margin-right: 80px;
 		margin-top: 10px;
+		*/
 	}
-	
+
 	.general-img {
 		width: 500px;
 		padding: 0px;
 	}
-	
+
 	.research-img {
 		width: 500px;
 	}
-	
-	
+
+
 	nav{
 		width:200px;
 		float:left;
@@ -233,18 +315,19 @@ You can change the pixel number below */
 		top:0px;
 		left:0px;
 	}
-	
+
 	main,nav {
 		float:none;
 	}
 
 	img {
-    padding: 10px 10px 10px 10px;
-	margin-bottom: 10px;
+    /*padding: 10px 10px 10px 10px;*/
+	/*margin-bottom: 10px;*/
 	align-content: center;
 	width: 100%;
 	}
-	
+
+
 } /* closes 768px+ */
 
 
@@ -252,18 +335,13 @@ You can change the pixel number below */
 /* New CSS for desktop sizes.
 You can change the pixel number below */
 @media all and (min-width: 1024px) {
-	
-	
-	
+
+
 	img {
-	width: 500px;
+	width:100%;
 
 	}
 
 
-	
+
 } /* closes 1024px+ */
-
-
-
-
