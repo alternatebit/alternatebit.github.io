@@ -17,7 +17,11 @@ figcaption, footer, header, nav, main, aside, section, canvas, iframe {
 header {
 	font-family: 'Roboto', sans-serif;
 	text-align: left;
-	padding: 20px;
+	padding: 10px;
+}
+
+.company-logo {
+	width: 50%;
 }
 
 .hero-img {
@@ -27,6 +31,7 @@ h1 {
 	color:#3AAFA1;
 	text-align: left;
 	padding-left: 30px;
+	font-weight: bolder;
 }
 
 h2 {
@@ -63,9 +68,6 @@ main {
 	*/
 }
 
-.company-logo {
-	width: 90%;
-}
 
 
 img {
@@ -90,6 +92,7 @@ ul{
 	list-style: none;
 	padding-left: 0px;
 }
+
 
 /*
 a {
@@ -188,6 +191,36 @@ iframe {
 	width:100%;
 }
 
+.fab fa-twitter {
+	text-decoration: none;
+	background-color: none;
+}
+
+.your-class {
+
+}
+
+.apple-store-logo{
+	display: inherit;
+}
+
+.slick-slide img .apple-store-logo
+{
+    display: ;
+}
+
+
+.shape {
+	width: 10px;
+	height:50px;
+	background-color: lightgray;
+}
+
+.inline {
+	display: inline-block;
+}
+
+
 .subfooter {
 	background: #3AAFA1;
 	font-weight: bolder;
@@ -198,14 +231,15 @@ iframe {
 
 .footer-parent {
 	width: 100%;
-
+	margin-top: 50px;
 }
 
 
 .footer-elements {
-
-	padding: 50px;
+	padding: 30px;
 	display: inline-block;
+	align-items: center;
+	font-size: 14px;
 
 }
 
@@ -217,10 +251,12 @@ iframe {
 
 footer {
 	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
 	background:lightgray;
 	color: black;
 	width:100%;
 	text-align: center;
+
 }
 
 footer>p {
@@ -244,11 +280,8 @@ footer>p {
 /* Set a specific color for each brand */
 
 
-/* Twitter */
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
+
+
 
 .app-store-logo {
 	width: 200px;
@@ -283,6 +316,10 @@ You can change the pixel number below */
 	}
 
 
+	.company-logo {
+		width: 25%;
+	}
+
 	nav{
 		width:200px;
 		float:left;
@@ -294,6 +331,8 @@ You can change the pixel number below */
 	main,nav {
 		float:none;
 	}
+
+
 
 	img {
 	/*
@@ -310,9 +349,7 @@ You can change the pixel number below */
 		margin-right: 100px;
 	}
 
-	.company-logo {
-		width: 25%;
-	}
+
 
 } /* closes 768px+ */
 
@@ -341,7 +378,6 @@ You can change the pixel number below */
 		width: 500px;
 	}
 
-
 	nav{
 		width:200px;
 		float:left;
@@ -355,12 +391,9 @@ You can change the pixel number below */
 	}
 
 	img {
-    /*padding: 10px 10px 10px 10px;*/
-	/*margin-bottom: 10px;*/
 	align-content: center;
 	width: 100%;
 	}
-
 
 } /* closes 768px+ */
 
@@ -375,6 +408,15 @@ You can change the pixel number below */
 	width:100%;
 
 	}
+
+	.company-logo {
+		width: 25%;
+	}
+
+	header {
+		padding: 20px;
+	}
+
 
 
 
