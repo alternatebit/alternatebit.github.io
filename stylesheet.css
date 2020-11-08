@@ -160,6 +160,18 @@ nav>ul>li>a:hover {
 	color:white;
 }
 
+.lofive-container {
+	position: relative;
+	width: 100%;
+}
+
+.lofive-container > .hero-img {
+  width: 100%;
+  height: auto;
+}
+
+
+
 a.menu {
 	width: 20px;
 	margin-top: 10px;
@@ -206,19 +218,26 @@ iframe {
 	background-color: none;
 }
 
+.app-store-link {
+	position: absolute;
+	width: 25%;
+	top: 86%;
+	left: 86%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
 .your-class {
 
 }
 
 .apple-store-logo{
-	display: inherit;
 }
-
-.slick-slide img .apple-store-logo
-{
-    display: ;
-}
-
 
 .shape {
 	width: 10px;
@@ -260,6 +279,11 @@ iframe {
 	color: white;
 }
 
+.footer-elements > a:hover {
+	color: #3F3F41;
+}
+
+
 
 footer {
 	font-family: 'Roboto', sans-serif;
@@ -296,7 +320,7 @@ footer>p {
 
 
 .app-store-logo {
-	width: 200px;
+	width: 100%;
 }
 
 
@@ -379,6 +403,7 @@ You can change the pixel number below */
 		margin-top: 10px;
 		*/
 	}
+
 
 
 	.general-img {

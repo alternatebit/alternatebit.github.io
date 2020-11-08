@@ -17,8 +17,8 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
 
 	<script src="https://kit.fontawesome.com/7f46e861de.js" crossorigin="anonymous"></script>
 </head>
@@ -26,105 +26,117 @@
 
 <body>
 
-<div id="container">
+	<div id="container">
 
-<header><img class="company-logo" src="rectangle-logo.jpg" alt=""/>
-</header>
-
-
-
-<main>
-
-	<a></a>
+		<header><img class="company-logo" src="rectangle-logo.jpg" alt="" />
+		</header>
 
 
 
-	<div>
+		<main>
 
-<div class="your-class">
-  <div>
-		<img class="hero-img" src="LoFive.jpg" alt=""/>
-	  <div>
-		<h1>LoFive</h1>
-		<p class="description">A tile game played by placing tiles onto a grid to earn points. By stacking tiles, the amounts on the tiles are added. These amounts must stay below 5, or else it’s game over! Filling rows and columns lower the tile values and earn more points. Players can unlock new color themes by reaching high scores.</p>
-	  </div>
-		<a href="https://itunes.apple.com/us/app/lofive/id1413993120?mt=8"><img class="app-store-logo" src="App-Store.png" alt="" width="20" /></a></div>
-		<div>
-			<img class="hero-img" src="ProjectSwirl.jpg" alt=""/>
-		  <h1>Project Swirl</h1>
-			<p class="description">Having to drop out of Alchemy College to keep your family’s coffee shop from going out of business? Sucks. Awakening an ancient evil and defending the metropolitan area from an enchanted army of beverage monsters? Really sucks. Collect, mix, discover, and unleash the power of beverages in this quirky and nostalgic top-down action adventure.</p>
+			<a></a>
+
+
+
+			<div>
+
+				<div class="your-class">
+					<div>
+
+
+						<div class="lofive-container">
+							<img class="hero-img" src="LoFive.jpg" alt="" />
+							<a class="app-store-link" href="https://itunes.apple.com/us/app/lofive/id1413993120?mt=8">
+								<img class="app-store-logo" src="App-Store.png" alt="" width="20" />
+							</a>
+						</div>
+
+
+						<div>
+							<h1>LoFive</h1>
+							<p class="description">A tile game played by placing tiles onto a grid to earn points. By stacking tiles, the amounts on the tiles are added. These amounts must stay below 5, or else it’s game over! Filling rows and columns lower the
+								tile values and earn more points. Players can unlock new color themes by reaching high scores.</p>
+						</div>
+					</div>
+					<div>
+						<img class="hero-img" src="ProjectSwirl.jpg" alt="" />
+						<h1>Project Swirl</h1>
+						<p class="description">Having to drop out of Alchemy College to keep your family’s coffee shop from going out of business? Sucks. Awakening an ancient evil and defending the metropolitan area from an enchanted army of beverage monsters?
+							Really sucks. Collect, mix, discover, and unleash the power of beverages in this quirky and nostalgic top-down action adventure.</p>
+					</div>
+					<div>
+						<img class="hero-img" src="ProjectHoot.jpg" alt="" />
+						<h1>Project Hoot</h1>
+						<p class="description">Play as Twinkle the Cat or Talon the Owl in this light-weight online co-op platformer where you work together to reach for the stars!</p>
+					</div>
+				</div>
+
+
+		</main>
+
+
+
+	</div><!-- close "container" -->
+
+
+	<footer class="subfooter">
+		<div class="footer-parent">
+			<div class="footer-elements">FOLLOW <a href="https://twitter.com/AlternateBit"><i class="fab fa-twitter"></i></a> <a href="https://www.instagram.com/alternatebit/?utm_source=ig_embed&utm_campaign=loading"><i class="fab fa-instagram"></i></a>
+			</div>
+
+			<div class="footer-elements"><a href="mailto:" ALTERNATE.BIT.COMPANY@GMAIL.COM">CONTACT</a></div>
+			<div class="footer-elements"><a href="https://alternatebitgames.com/privacy_policy.html">PRIVACY POLICY</a></div>
 		</div>
-		<div>
-			<img class="hero-img" src="ProjectHoot.jpg" alt=""/>
-		  <h1>Project Hoot</h1>
-			<p class="description">Play as Twinkle the Cat or Talon the Owl in this light-weight online co-op platformer where you work together to reach for the stars!</p>
-		</div>
-</div>
+	</footer>
+
+	<footer>
+		<p>&#169; Alternate Bit 2020</p>
+	</footer>
+
+	<!-- Link to jQuery: Google CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Write your jQuery here -->
+
+	<script>
+		$(document).ready(function() {
+
+			$('ul ul').hide();
+			$('nav ul').hide();
+
+			$('li:nth-child(3)').click(function() {
+				$('ul ul').slideToggle();
+			}); //close .click
+
+			$('div#container>header h1').click(function() {
+				$('body').toggleClass('darby');
+			}); //close .click
+
+			//Hamburger menu
+			$('a.menu').click(function() {
+				$('nav>ul').slideToggle();
+			});
 
 
-</main>
+		}); //closes .ready
+	</script>
 
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 
-
-</div><!-- close "container" -->
-
-
-<footer class="subfooter">
-	<div class="footer-parent">
-	<div class="footer-elements">FOLLOW <a href="https://twitter.com/AlternateBit"><i class="fab fa-twitter"></i></a> <a href="https://www.instagram.com/alternatebit/?utm_source=ig_embed&utm_campaign=loading"><i class="fab fa-instagram"></i></a></div>
-
-	<div class="footer-elements">ALTERNATE.BIT.COMPANY@GMAIL.COM</div>
-	<div class="footer-elements"><a href="https://alternatebitgames.com/privacy_policy.html">PRIVACY POLICY</a></div>
-</div>
-</footer>
-
-<footer>
-	<p>&#169; Alternate Bit 2020</p>
-</footer>
-
-<!-- Link to jQuery: Google CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Write your jQuery here -->
-
-<script>
-$(document).ready(function() {
-
-	$('ul ul').hide();
-	$('nav ul').hide();
-
-	$('li:nth-child(3)').click(function() {
-		$('ul ul').slideToggle();
-	});//close .click
-
-	$('div#container>header h1').click(function() {
-		$('body').toggleClass('darby');
-	});//close .click
-
-	//Hamburger menu
-    $('a.menu').click(function() {
-		$('nav>ul').slideToggle();
-    });
-
-
-}); //closes .ready
-</script>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-      $('.your-class').slick({
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.your-class').slick({
 				dots: true,
-			  infinite: true,
-			  speed: 500,
-			  fade: true,
-			  cssEase: 'linear'
-      });
-    });
-  </script>
+				infinite: true,
+				speed: 500,
+				cssEase: 'linear'
+			});
+		});
+	</script>
 
 </body>
+
 </html>
