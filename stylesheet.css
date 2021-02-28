@@ -1,460 +1,316 @@
-/* Basic CSS resets -- levelling slight inconsistencies in browsers */
 html, body {
-	margin:0px;
-	padding:0px;
-	height:100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
 }
 
-
-/* Legacy: this will enforce block-level properties to HTML5 elements */
 figcaption, footer, header, nav, main, aside, section, canvas, iframe {
-	display: block;
+  display: block;
 }
-
-
-/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 header {
-	font-family: 'Roboto', sans-serif;
-	text-align: left;
-	padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 30px;
 }
 
 .company-logo {
-	width: 50%;
+  width: 50%;
 }
 
 .hero-img {
-	width:100%;
+  width: 100%;
 }
 
 .in-img {
-	border-radius: 10px;
-	width: 180px;
+  border-radius: 10px;
+  width: 180px;
 }
 
 h1 {
-	color:#3AAFA1;
-	text-align: left;
-	padding-left: 5px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: 25px;
-	font-weight: bolder;
-	border-left: 8px solid #3F3F41;
+  color: #3AAFA1;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 25px;
+  font-weight: bolder;
+  border-left: 8px solid #3F3F41;
 }
 
 h2 {
-	text-align: center;
+  text-align: center;
 }
 
 h3 {
-	padding: 50px;
+  padding: 50px;
 }
 
 body {
-	/* Standard text-settings below */
-	font-size: 1em;
-    line-height: 1.4em;
-	font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
-	color:#3f3f41;
-	align-content: center;
-	text-align: center;
+  color: #3f3f41;
+  align-content: center;
+  text-align: center;
 }
 
 .description {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-#container {
-	/*
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	*/
-}
-
-
-
-img {
-	/*
-    padding: 10px 10px 10px 10px;
-	margin-bottom: 10px;
-	width: 100%;
-	*/
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 figure {
-	text-align: center;
-	align-content: center;
-	width: 100%;
+  text-align: center;
+  align-content: center;
+  width: 100%;
 }
 
 figcaption {
-	color:black;
+  color: black;
 }
 
-ul{
-	list-style: none;
-	padding-left: 0px;
+ul {
+  list-style: none;
+  padding-left: 0px;
 }
-
-
-/*
-a {
-    display: block;  // or display: inline-block;
-    width: auto;  // makes buttons wide if block-level; maybe also % width
-    text-align: center;
-    padding: 6px;  //  lots of padding
-    margin: 5px;  //  increase top and bottom margins
-    text-decoration: none;
-    border-radius: 3px;  //  a slight-buttonish shape doesn't hurt
-	background: lightgray;
-	color: #3f3f41;
-	font-family: 'Roboto', sans-serif;
-
-}
-
-a:hover {
-	background:gray;
-	color:white;
-
-}
-
-a.menu {
-	width: 20px;
-	margin-top: 10px;
-}
-
-a.menu:hover {
-	background: #3f3f41;
-	color:lightgray;
-}
-
-nav a:hover{
-	background: #3f3f41;
-	color:lightgray;
-}
-
-*/
 
 nav>ul>li>a {
-  display: block;  /* or display: inline-block; */
-  width: auto;  /* makes buttons wide if block-level; maybe also % width*/
+  display: block;
+  width: auto;
   text-align: center;
-  padding: 6px;  /*  lots of padding*/
-  margin: 5px;  /*  increase top and bottom margins*/
+  padding: 6px;
+  margin: 5px;
   text-decoration: none;
-  border-radius: 3px;  /*  a slight-buttonish shape doesn't hurt */
-	background: lightgray;
-	color: #3f3f41;
-	font-family: 'Roboto', sans-serif;
+  border-radius: 3px;
+  background: lightgray;
+  color: #3f3f41;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav>ul>li>a:hover {
-	background:gray;
-	color:white;
+  background: gray;
+  color: white;
 }
 
 .lofive-container {
-	position: relative;
-	width: 100%;
+  position: relative;
+  width: 100%;
 }
 
-.lofive-container > .hero-img {
+.lofive-container>.hero-img {
   width: 100%;
   height: auto;
 }
 
-
-
 a.menu {
-	width: 20px;
-	margin-top: 10px;
-
-	display: block;  /* or display: inline-block; */
-	text-align: center;
-	padding: 6px;  /*  lots of padding*/
-	margin: 5px;  /*  increase top and bottom margins*/
-	text-decoration: none;
-	border-radius: 3px;  /*  a slight-buttonish shape doesn't hurt */
-	background: lightgray;
-	color: #3f3f41;
-	font-family: 'Roboto', sans-serif;
+  width: 20px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  padding: 6px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 3px;
+  background: lightgray;
+  color: #3f3f41;
+  font-family: 'Roboto', sans-serif;
 }
 
 a.menu:hover {
-	background: #3f3f41;
-	color:lightgray;
+  background: #3f3f41;
+  color: lightgray;
 }
 
-nav a:hover{
-	background: #3f3f41;
-	color:lightgray;
+nav a:hover {
+  background: #3f3f41;
+  color: lightgray;
 }
 
-
-/* A better looking default horizontal rule */
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
-
 
 iframe {
-	width:100%;
+  width: 100%;
 }
 
 .fab fa-twitter {
-	text-decoration: none;
-	background-color: none;
+  text-decoration: none;
+  background-color: none;
 }
 
 .app-store-link {
-	position: absolute;
-	width: 25%;
-	top: 86%;
-	left: 86%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	color: white;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	border-radius: 5px;
-}
-
-.your-class {
-
-}
-
-.apple-store-logo{
+  position: absolute;
+  width: 25%;
+  top: 86%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .shape {
-	width: 10px;
-	height:40px;
-	background-color: #3F3F41;
-	display: inline-block;
-	margin-right: 15px;
+  width: 10px;
+  height: 40px;
+  background-color: #3F3F41;
+  display: inline-block;
+  margin-right: 15px;
 }
 
 .inline {
-	display: inline-block;
+  display: inline-block;
 }
 
-
 .subfooter {
-	background: #3AAFA1;
-	font-weight: bolder;
-	color: white;
-	margin: 0;
-	align-items: center;
+  background: #3AAFA1;
+  font-weight: bolder;
+  color: white;
+  margin: 0;
+  align-items: center;
 }
 
 .footer-parent {
-	width: 100%;
-	margin-top: 50px;
+  width: 100%;
+  margin-top: 50px;
 }
-
 
 .footer-elements {
-	padding: 30px;
-	display: inline-block;
-	align-items: center;
-	font-size: 14px;
-
+  padding: 30px;
+  display: inline-block;
+  align-items: center;
+  font-size: 14px;
 }
 
-.footer-elements > a {
-	text-decoration: none;
-	color: white;
+.footer-elements>a {
+  text-decoration: none;
+  color: white;
 }
 
-.footer-elements > a:hover {
-	color: #3F3F41;
+.footer-elements>a:hover {
+  color: #3F3F41;
 }
-
-
 
 footer {
-	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
-	background:#3F3F41;
-	color: white;
-	width:100%;
-	text-align: center;
-
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  background: #3F3F41;
+  color: white;
+  width: 100%;
+  text-align: center;
 }
 
 footer>p {
-	padding: 10px;
-	margin: 0;
+  padding: 10px;
+  margin: 0;
 }
 
-/* Style all font awesome icons */
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
-
-/* Set a specific color for each brand */
-
-
-
-
 
 .app-store-logo {
-	width: 100%;
+  width: 75%;
 }
-
 
 /* ========================================
 MEDIA QUERIES!
 ======================================== */
-
-/* New CSS for tablet sizes.
-You can change the pixel number below */
+/* CSS for tablet sizes.*/
 @media all and (min-width: 768px) {
+  .general-img {
+    width: 500px;
+    padding: 0px;
+  }
 
+  .research-img {
+    width: 500px;
+  }
 
-	#container {
-		/*
-		max-width:750;
-		margin-left: 80px;
-		margin-right: 80px;
-		margin-top: 10px;
-		*/
-	}
+  .company-logo {
+    width: 25%;
+  }
 
-	.general-img {
-		width: 500px;
-		padding: 0px;
-	}
+  nav {
+    width: 200px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
 
-	.research-img {
-		width: 500px;
-	}
+  main, nav {
+    float: none;
+  }
 
+  .description {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+/* closes 768px+ */
 
-	.company-logo {
-		width: 25%;
-	}
-
-	nav{
-		width:200px;
-		float:left;
-		position:absolute;
-		top:0px;
-		left:0px;
-	}
-
-	main,nav {
-		float:none;
-	}
-
-
-
-	img {
-	/*
-    padding: 10px 10px 10px 10px;
-	margin-bottom: 10px;
-
-	align-content: center;
-	width: 50%;
-		*/
-	}
-
-	.description {
-		margin-left: 100px;
-		margin-right: 100px;
-	}
-
-
-
-} /* closes 768px+ */
-
-
-/* New CSS for phone sizes.
-You can change the pixel number below */
+/* CSS for phone sizes.*/
 @media all and (min-width: 300px) {
+  .general-img {
+    width: 500px;
+    padding: 0px;
+  }
 
+  .research-img {
+    width: 500px;
+  }
 
-	#container {
-		/*
-		max-width:300;
-		margin-left: 80px;
-		margin-right: 80px;
-		margin-top: 10px;
-		*/
-	}
+  nav {
+    width: 200px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
 
+  main, nav {
+    float: none;
+  }
 
+  img {
+    align-content: center;
+    width: 100%;
+  }
+}
+/* closes 768px+ */
 
-	.general-img {
-		width: 500px;
-		padding: 0px;
-	}
-
-	.research-img {
-		width: 500px;
-	}
-
-	nav{
-		width:200px;
-		float:left;
-		position:absolute;
-		top:0px;
-		left:0px;
-	}
-
-	main,nav {
-		float:none;
-	}
-
-	img {
-	align-content: center;
-	width: 100%;
-	}
-
-} /* closes 768px+ */
-
-
-
-/* New CSS for desktop sizes.
-You can change the pixel number below */
+/* CSS for desktop sizes.*/
 @media all and (min-width: 1024px) {
+  img {
+    width: 100%;
+  }
 
+  .company-logo {
+    width: 25%;
+  }
 
-	img {
-	width:100%;
-
-	}
-
-	.company-logo {
-		width: 25%;
-	}
-
-	header {
-		padding: 20px;
-	}
-
-
-
-
-} /* closes 1024px+ */
+  header {
+    padding: 20px;
+  }
+}
+/* closes 1024px+ */
