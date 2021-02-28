@@ -188,7 +188,7 @@ iframe {
 }
 
 .footer-elements {
-  padding: 30px;
+  padding: 10px;
   display: inline-block;
   align-items: center;
   font-size: 14px;
@@ -250,6 +250,10 @@ MEDIA QUERIES!
     width: 25%;
   }
 
+	.footer-elements {
+	  padding: 30px;
+	}
+
   nav {
     width: 200px;
     float: left;
@@ -296,6 +300,7 @@ MEDIA QUERIES!
     align-content: center;
     width: 100%;
   }
+
 }
 /* closes 768px+ */
 
@@ -308,6 +313,10 @@ MEDIA QUERIES!
   .company-logo {
     width: 25%;
   }
+
+	.footer-elements {
+		padding: 30px;
+	}
 
   header {
     padding: 20px;
