@@ -258,6 +258,13 @@ footer>p {
 	border-radius: 0px 0px 0px 200px;
 }
 
+.devices {
+	width: 90%;
+	position: absolute;
+  top: 70px;
+	right: 25px;
+}
+
 .hero-banner {
 		height: 400px;
 }
@@ -444,6 +451,12 @@ MEDIA QUERIES!
   	padding: 30px;
   }
 
+  .devices {
+  	width: 50%;
+  	position: absolute;
+    top: 5%;
+  	right: 10px;
+  }
 
 }
 
