@@ -8,14 +8,11 @@ figcaption, footer, header, nav, main, aside, section, canvas, iframe {
   display: block;
 }
 
-header {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  padding: 30px;
-}
-
 .company-logo {
   width: 50%;
+	position: absolute;
+	left: 0px;
+	padding: 30px;
 }
 
 .hero-img {
@@ -25,6 +22,14 @@ header {
 .in-img {
   border-radius: 10px;
   width: 180px;
+}
+
+.twitter-follow-button {
+	padding: 20px;
+	position: absolute;
+	right:0px;
+	padding: 20px;
+
 }
 
 h1 {
@@ -39,17 +44,61 @@ h1 {
 }
 
 h2 {
-  text-align: center;
+	color: ##3AAFA1;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  font-weight: bolder;
 }
 
 h3 {
-  padding: 50px;
+	color: #3AAFA1;
+	text-align: left;
+	font-weight: bold;
+	font-size: 60px;
+	display: block;
+	line-height: 75px;
+	top: 15%;
+	position: absolute;
+	margin-left: 100px;
+	width: 40%;
+}
+
+h4 {
+	color: #00000;
+	text-align: left;
+	font-weight: bold;
+	font-size: 18px;
+	display: block;
+	line-height: 25px;
+	top: 65%;
+	position: absolute;
+	margin-left: 100px;
+	width: 40%;
+}
+
+.app-store-link {
+  position: absolute;
+  width: 25%;
+  top: 75%;
+  right: 72%;
+	margin-left: 100px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 body {
   font-size: 1em;
   line-height: 1.4em;
   font-family: 'Roboto', sans-serif;
+}
+
+p {
+	text-align: left;
 }
 
 main {
@@ -73,29 +122,6 @@ figcaption {
   color: black;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0px;
-}
-
-nav>ul>li>a {
-  display: block;
-  width: auto;
-  text-align: center;
-  padding: 6px;
-  margin: 5px;
-  text-decoration: none;
-  border-radius: 3px;
-  background: lightgray;
-  color: #3f3f41;
-  font-family: 'Roboto', sans-serif;
-}
-
-nav>ul>li>a:hover {
-  background: gray;
-  color: white;
-}
-
 .lofive-container {
   position: relative;
   width: 100%;
@@ -104,6 +130,14 @@ nav>ul>li>a:hover {
 .lofive-container>.hero-img {
   width: 100%;
   height: auto;
+}
+
+.mobile-blurb {
+display:block;
+}
+
+.desktop-blurb {
+display:none;
 }
 
 a.menu {
@@ -148,19 +182,6 @@ iframe {
   background-color: none;
 }
 
-.app-store-link {
-  position: absolute;
-  width: 25%;
-  top: 86%;
-  left: 86%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
 
 .shape {
   width: 10px;
@@ -175,7 +196,7 @@ iframe {
 }
 
 .subfooter {
-  background: #3AAFA1;
+  background: #3F3F41;
   font-weight: bolder;
   color: white;
   margin: 0;
@@ -184,7 +205,6 @@ iframe {
 
 .footer-parent {
   width: 100%;
-  margin-top: 50px;
 }
 
 .footer-elements {
@@ -200,7 +220,7 @@ iframe {
 }
 
 .footer-elements>a:hover {
-  color: #3F3F41;
+  color: lightgray;
 }
 
 footer {
@@ -210,10 +230,11 @@ footer {
   color: white;
   width: 100%;
   text-align: center;
+	padding: 20px;
 }
 
 footer>p {
-  padding: 10px;
+  padding-left:: 10px;
   margin: 0;
 }
 
@@ -231,6 +252,31 @@ footer>p {
 .app-store-logo {
   width: 75%;
 }
+
+.splash {
+	background-color: #3AAFA1;
+	display: block;
+	height: inherit;
+	width: 40%;
+	position: absolute;
+	right: 0px;
+	border-radius: 0px 0px 0px 200px;
+
+}
+
+.hero-banner {
+		height: 600px;
+}
+
+.follow-twitter {
+	background-color: #3AAFA1;
+	display: block;
+	height: 300px;
+	width: 100%;
+	border-radius: 0px 200px 0px 0px;
+	margin-top: 50px;
+}
+
 
 /* ========================================
 MEDIA QUERIES!
@@ -300,9 +346,53 @@ MEDIA QUERIES!
     align-content: center;
     width: 100%;
   }
+	.mobile-blurb {
+	display:block;
+	}
+
+	.desktop-blurb {
+	display:none;
+	}
 
 }
 /* closes 768px+ */
+
+/* CSS for phone sizes.*/
+@media all and (min-width: 768px) {
+  .general-img {
+    width: 500px;
+    padding: 0px;
+  }
+
+  .research-img {
+    width: 500px;
+  }
+
+  nav {
+    width: 200px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  main, nav {
+    float: none;
+  }
+
+  img {
+    align-content: center;
+    width: 100%;
+  }
+	.mobile-blurb {
+	display:none;
+	}
+
+	.desktop-blurb {
+	display:block;
+	}
+
+}
 
 /* CSS for desktop sizes.*/
 @media all and (min-width: 1024px) {
@@ -311,15 +401,20 @@ MEDIA QUERIES!
   }
 
   .company-logo {
-    width: 25%;
+    width: 20%;
   }
 
 	.footer-elements {
 		padding: 30px;
 	}
 
-  header {
-    padding: 20px;
-  }
+	.mobile-blurb {
+		display:none;
+
+	}
+	.desktop-blurb {
+	  display:block;
+	}
+
 }
 /* closes 1024px+ */
