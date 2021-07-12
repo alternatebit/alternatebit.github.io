@@ -109,6 +109,7 @@ vertical-align:middle;
 
 .text-content > p {
   text-align: left;
+  margin-top: 10px;
 }
 
 .footer-elements > p {
@@ -181,6 +182,7 @@ h2 {
 	color: #083A6A;
   text-align: left;
   margin-top: 0px;
+  margin-bottom: 0px;
   padding-bottom: 2px;
   font-size: 36px;
   font-weight: lighter;
